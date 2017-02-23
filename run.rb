@@ -16,4 +16,4 @@ puts nest.get_thermostat_by_name('dev')
 puts nest.get_thermostat_by_name('dev').get('target_temperature_high_f')
 
 # Update thermostat
-puts dev.update!(property_id: 'target_temperature_high_f', value: 75)
+nest.get_thermostat_by_name('dev').update!(property_id: 'target_temperature_high_f', value: 75)
